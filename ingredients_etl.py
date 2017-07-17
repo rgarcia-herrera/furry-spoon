@@ -6,7 +6,7 @@ db = Database()
 
 class Ingredient(db.Entity):
     name = Required(str)
-    type = Optional(str)
+    tags = Required(Json)
 
 
 with open('data/srep00196-s3.csv') as f:
@@ -25,4 +25,4 @@ db.generate_mapping(create_tables=True)
 
 with db_session:
     for ingredient in all:
-        Ingredient(name=ingredient)
+        Ingredient(name=ingredient, tags=[])
