@@ -37,5 +37,3 @@ for cuisine in n:
     ingredients = set(n[cuisine].nodes())
     with open('data/ingredients_%s.csv' % cuisine, 'w') as o:
         o.writelines(['%s\n' % i for i in ingredients])
-        
-        
