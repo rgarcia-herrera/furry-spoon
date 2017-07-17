@@ -9,7 +9,7 @@ class Ingredient(db.Entity):
     tags = Required(Json)
 
 
-db.bind('sqlite', 'ingredients.sqlite', create_db=True)
+db.bind('sqlite', 'data/ingredients.sqlite', create_db=True)
 db.generate_mapping(create_tables=True)
 
 
@@ -91,15 +91,15 @@ def main(stdscr):
 
         elif c == ord('c'):
             t.toggle_tag('carnic')
-            t.update_ingredient()
+            t.next_ingredient()
 
         elif c == ord('v'):
             t.toggle_tag('vegan')
-            t.update_ingredient()
+            t.next_ingredient()
 
         elif c == ord('a'):
             t.toggle_tag('animal origin')
-            t.update_ingredient()
+            t.next_ingredient()
 
         elif c == ord('q'):
             break  # Exit the while()
