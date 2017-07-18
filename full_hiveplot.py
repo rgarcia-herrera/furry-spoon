@@ -20,13 +20,16 @@ g = nx.gpickle.read_gpickle('data/full_nw.pickle')
 with db_session:
     carnic = sorted([(g.degree(i.name), i.name)
                      for i in Ingredient.select(lambda i:
-                                                'carnic' in i.tags)])
+                                                'carnic' in i.tags)],
+                    reverse=True)
     vegan = sorted([(g.degree(i.name), i.name)
                     for i in Ingredient.select(lambda i:
-                                               'vegan' in i.tags)])
+                                               'vegan' in i.tags)],
+                   reverse=True)
     animal = sorted([(g.degree(i.name), i.name)
                      for i in Ingredient.select(lambda i:
-                                                'animal origin' in i.tags)])
+                                                'animal origin' in i.tags)],
+                    reverse=True)
 
 
 def rotate(radius, angle, origin=(0, 0)):
@@ -36,18 +39,18 @@ def rotate(radius, angle, origin=(0, 0)):
             origin[1] + round((radius * sin(radians(angle))), 2))
 
 
-h = Hiveplot('ingredients_3cat.svg')
+h = Hiveplot('plots/ingredients_3cat.svg')
 offcenter = 50
 center = (250, 250)
 rotation = 60
 axis_vegan0_start = rotate(offcenter,
-                           angle=rotation - 20,
+                           angle=rotation - 30,
                            origin=center)
 axis_vegan0_end = rotate(offcenter + len(vegan)*4,
                          angle=rotation - 30,
                          origin=axis_vegan0_start)
 axis_vegan0 = Axis(axis_vegan0_start, axis_vegan0_end,
-                   stroke="darkgreen", stroke_opacity="0.3", stroke_width=4)
+                   stroke="darkgreen", stroke_opacity="1", stroke_width=3)
 
 
 axis_vegan1_start = rotate(offcenter,
@@ -57,52 +60,65 @@ axis_vegan1_end = rotate(offcenter + len(vegan)*4,
                          angle=rotation + 10,
                          origin=axis_vegan1_start)
 axis_vegan1 = Axis(axis_vegan1_start, axis_vegan1_end,
-                   stroke="darkgreen", stroke_opacity="0.3", stroke_width=4)
+                   stroke="darkgreen", stroke_opacity="1", stroke_width=3)
 
 
 axis_carnic0_start = rotate(offcenter,
-                            angle=rotation + 120 - 10,
+                            angle=rotation + 120 - 15,
                             origin=center)
 axis_carnic0_end = rotate(offcenter + len(carnic)*4,
                           angle=rotation + 120 - 10,
                           origin=axis_carnic0_start)
 axis_carnic0 = Axis(axis_carnic0_start, axis_carnic0_end,
-                    stroke="red", stroke_opacity="0.3", stroke_width=4)
+                    stroke="darkred", stroke_opacity="1", stroke_width=3)
 
 axis_carnic1_start = rotate(offcenter,
-                            angle=rotation + 120 + 10,
+                            angle=rotation + 120 + 15,
                             origin=center)
 axis_carnic1_end = rotate(offcenter + len(carnic)*4,
                           angle=rotation + 120 + 10,
                           origin=axis_carnic1_start)
 axis_carnic1 = Axis(axis_carnic1_start, axis_carnic1_end,
-                    stroke="red", stroke_opacity="0.3", stroke_width=4)
+                    stroke="darkred", stroke_opacity="1", stroke_width=2)
 
 
 axis_animal0_start = rotate(offcenter,
-                            angle=rotation + 240 - 10,
+                            angle=rotation + 240 - 12,
                             origin=center)
 axis_animal0_end = rotate(offcenter + len(animal)*4,
                           angle=rotation + 240 - 10,
                           origin=axis_animal0_start)
 axis_animal0 = Axis(axis_animal0_start, axis_animal0_end,
-                    stroke="darkkhaki", stroke_opacity="0.8", stroke_width=4)
+                    stroke="darkkhaki", stroke_opacity="1", stroke_width=2)
 
 
 axis_animal1_start = rotate(offcenter,
-                            angle=rotation + 240 + 10,
+                            angle=rotation + 240 + 12,
                             origin=center)
 axis_animal1_end = rotate(offcenter + len(animal)*4,
                           angle=rotation + 240 + 10,
                           origin=axis_animal1_start)
 axis_animal1 = Axis(axis_animal1_start, axis_animal1_end,
-                    stroke="darkkhaki", stroke_opacity="0.8", stroke_width=4)
+                    stroke="darkkhaki", stroke_opacity="1", stroke_width=2)
 
 j = 0.0
 for n in carnic:
     j += 1.0
-    axis_carnic0.add_node(Node(n[1]), j / len(carnic))
-    axis_carnic1.add_node(Node(n[1]), j / len(carnic))
+    n0 = Node(n[1])
+    n1 = Node(n[1])
+    axis_carnic0.add_node(n0, j / len(carnic))
+    axis_carnic1.add_node(n1, j / len(carnic))
+    n0.dwg = n0.dwg.circle(center=(n0.x, n0.y),
+                           r=2,
+                           stroke_width=0,
+                           fill='darkred',
+                           fill_opacity=0.3)
+    n1.dwg = n1.dwg.circle(center=(n1.x, n1.y),
+                           r=2,
+                           stroke_width=0,
+                           fill='darkred',
+                           fill_opacity=0.3)
+
 j = 0.0
 for n in animal:
     j += 1.0
@@ -115,17 +131,25 @@ for n in vegan:
     axis_vegan1.add_node(Node(n[1]), j / len(vegan))
 
 
-# edges from axis0 to axis1
+h.axes = [axis_animal0, axis_animal1,
+          axis_carnic0, axis_carnic1,
+          axis_vegan0, axis_vegan1]
+
+edges = 0
 for e in g.edges():
+    #
+    # same axis connections
+    #
     if ((e[0] in axis_vegan0.nodes) and (e[1] in axis_vegan1.nodes)) or \
        ((e[1] in axis_vegan0.nodes) and (e[0] in axis_vegan1.nodes)):
         h.connect(axis_vegan0, e[0],
-                  5,  # angle of invisible axis for source control points
+                  15,  # angle of invisible axis for source control points
                   axis_vegan1, e[1],
-                  -5,  # angle of invisible axis for target control points
-                  stroke_width=0.2,  # pass any SVG attributes to an edge
+                  -15,  # angle of invisible axis for target control points
+                  stroke_width=0.2,
                   stroke_opacity=0.2,
                   stroke='limegreen')
+        edges += 1
 
     elif ((e[0] in axis_animal0.nodes) and (e[1] in axis_animal1.nodes)) or \
          ((e[1] in axis_animal0.nodes) and (e[0] in axis_animal1.nodes)):
@@ -133,9 +157,10 @@ for e in g.edges():
                   5,  # angle of invisible axis for source control points
                   axis_animal1, e[1],
                   -5,  # angle of invisible axis for target control points
-                  stroke_width=0.2,  # pass any SVG attributes to an edge
-                  stroke_opacity=0.2,
-                  stroke='burlywood')
+                  stroke_width=0.2,
+                  stroke_opacity=0.6,
+                  stroke='sienna')
+        edges += 1
 
     elif ((e[0] in axis_carnic0.nodes) and (e[1] in axis_carnic1.nodes)) or \
          ((e[1] in axis_carnic0.nodes) and (e[0] in axis_carnic1.nodes)):
@@ -143,32 +168,53 @@ for e in g.edges():
                   5,  # angle of invisible axis for source control points
                   axis_carnic1, e[1],
                   -5,  # angle of invisible axis for target control points
-                  stroke_width=0.2,  # pass any SVG attributes to an edge
-                  stroke_opacity=0.2,
-                  stroke='darkred')
+                  stroke_width=0.2,
+                  stroke_opacity=0.4,
+                  stroke='red')
+        edges += 1
 
-    elif ((e[0] in axis_vegan1.nodes) and (e[1] in axis_carnic0.nodes)) or \
-         ((e[1] in axis_carnic0.nodes) and (e[0] in axis_vegan1.nodes)):
+    #
+    # connect different axes
+    #
+    elif ((e[0] in axis_vegan1.nodes) and (e[1] in axis_carnic0.nodes)):
         h.connect(axis_vegan1, e[0],
                   35,  # angle of invisible axis for source control points
                   axis_carnic0, e[1],
                   -35,  # angle of invisible axis for target control points
-                  stroke_width=0.3,  # pass any SVG attributes to an edge
+                  stroke_width=0.3,
                   stroke_opacity=0.3,
-                  stroke='brown')
+                  stroke='goldenrod')
+        edges += 1
+    elif ((e[1] in axis_vegan1.nodes) and (e[0] in axis_carnic0.nodes)):
+        h.connect(axis_vegan1, e[1],
+                  35,  # angle of invisible axis for source control points
+                  axis_carnic0, e[0],
+                  -35,  # angle of invisible axis for target control points
+                  stroke_width=0.3,
+                  stroke_opacity=0.3,
+                  stroke='goldenrod')
+        edges += 1
 
-    elif ((e[0] in axis_carnic1.nodes) and (e[1] in axis_animal0.nodes)) or \
-         ((e[1] in axis_animal0.nodes) and (e[0] in axis_carnic1.nodes)):
+    elif ((e[0] in axis_carnic1.nodes) and (e[1] in axis_animal0.nodes)):
         h.connect(axis_carnic1, e[0],
                   20,  # angle of invisible axis for source control points
                   axis_animal0, e[1],
                   -20,  # angle of invisible axis for target control points
-                  stroke_width=0.3,  # pass any SVG attributes to an edge
+                  stroke_width=0.3,
                   stroke_opacity=0.3,
-                  stroke='peru')
+                  stroke='purple')
+        edges += 1
+    elif ((e[1] in axis_carnic1.nodes) and (e[0] in axis_animal0.nodes)):
+        h.connect(axis_carnic1, e[1],
+                  20,  # angle of invisible axis for source control points
+                  axis_animal0, e[0],
+                  -20,  # angle of invisible axis for target control points
+                  stroke_width=0.3,
+                  stroke_opacity=0.3,
+                  stroke='purple')
+        edges += 1
 
-    elif ((e[0] in axis_animal1.nodes) and (e[1] in axis_vegan0.nodes)) or \
-         ((e[1] in axis_vegan0.nodes) and (e[0] in axis_animal1.nodes)):
+    elif ((e[0] in axis_animal1.nodes) and (e[1] in axis_vegan0.nodes)):
         h.connect(axis_animal1, e[0],
                   35,  # angle of invisible axis for source control points
                   axis_vegan0, e[1],
@@ -176,6 +222,18 @@ for e in g.edges():
                   stroke_width=0.3,  # pass any SVG attributes to an edge
                   stroke_opacity=0.3,
                   stroke='darkkhaki')
+        edges += 1
+    elif ((e[1] in axis_animal1.nodes) and (e[0] in axis_vegan0.nodes)):
+        h.connect(axis_animal1, e[1],
+                  35,  # angle of invisible axis for source control points
+                  axis_vegan0, e[0],
+                  -35,  # angle of invisible axis for target control points
+                  stroke_width=0.3,  # pass any SVG attributes to an edge
+                  stroke_opacity=0.3,
+                  stroke='darkkhaki')
+        edges += 1
+    print edges
 
 
+print "added %s edges" % edges
 h.save()
