@@ -13,7 +13,7 @@ class Ingredient(db.Entity):
 db.bind('sqlite', 'data/ingredients.sqlite', create_db=False)
 db.generate_mapping(create_tables=False)
 
-g = nx.gpickle.read_gpickle('data/full_nw.pickle')
+g = nx.gpickle.read_gpickle('data/omnivorous.pickle')
 
 with db_session:
     carnic = [i.name for i in Ingredient.select(lambda i:
