@@ -26,14 +26,6 @@ with open('data/srep00196-s3.csv') as f:
                 w = 1
             n[cuisine].add_edge(*pair, weight=w)
 
+# write out a pickle per cuisine
 for cuisine in n:
-    # write an edgelist by cuisine
-    nx.edgelist.write_weighted_edgelist(n[cuisine],
-                                        'data/inw_%s_edgelist.csv' % cuisine,
-                                        comments='#',
-                                        delimiter=',',
-                                        encoding='utf-8')
-    # write out unique ingredients
-    ingredients = set(n[cuisine].nodes())
-    with open('data/ingredients_%s.csv' % cuisine, 'w') as o:
-        o.writelines(['%s\n' % i for i in ingredients])
+    nx.gpickle.write_gpickle(n[cuisine], 'data/%s_omni.pickle' % cuisine)
