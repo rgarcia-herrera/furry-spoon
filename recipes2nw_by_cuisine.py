@@ -28,4 +28,4 @@ with open('data/srep00196-s3.csv') as f:
 
 # write out a pickle per cuisine
 for cuisine in n:
-    nx.gpickle.write_gpickle(n[cuisine], 'data/%s_omni.pickle' % cuisine)
+    nx.gpickle.write_gpickle(n[cuisine], 'data/omni_%s.pickle' % cuisine)
