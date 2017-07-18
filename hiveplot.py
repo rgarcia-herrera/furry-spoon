@@ -2,6 +2,22 @@ import networkx as nx
 from math import sin, cos, radians
 from pony.orm import db_session, Database, Required, Json
 from pyveplot import Hiveplot, Axis, Node
+import argparse
+from os import path
+
+description = """Create hiveplot from pickled ingredient graph."""
+
+################################
+# parse command line arguments #
+################################
+parser = argparse.ArgumentParser(
+    description=description)
+
+parser.add_argument('gpickle',
+                    type=argparse.FileType('r'),
+                    help='a pickled networkx graph')
+
+args = parser.parse_args()
 
 
 db = Database()
@@ -15,7 +31,7 @@ class Ingredient(db.Entity):
 db.bind('sqlite', 'data/ingredients.sqlite', create_db=False)
 db.generate_mapping(create_tables=False)
 
-g = nx.gpickle.read_gpickle('data/full_nw.pickle')
+g = nx.gpickle.read_gpickle(args.gpickle)
 
 with db_session:
     carnic = sorted([(g.degree(i.name), i.name)
@@ -39,7 +55,11 @@ def rotate(radius, angle, origin=(0, 0)):
             origin[1] + round((radius * sin(radians(angle))), 2))
 
 
-h = Hiveplot('plots/ingredients_3cat.svg')
+prefix = path.basename(args.gpickle.name).split('.')[0]
+hive_path = path.join("plots",
+                      "%s.svg" % prefix)
+
+h = Hiveplot(hive_path)
 offcenter = 50
 center = (250, 250)
 rotation = 60
@@ -232,8 +252,6 @@ for e in g.edges():
                   stroke_opacity=0.3,
                   stroke='darkkhaki')
         edges += 1
-    print edges
 
 
-print "added %s edges" % edges
 h.save()
