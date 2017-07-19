@@ -17,7 +17,7 @@ The omnivorous network is constructed from 56,502 recipes from all
 over the world. Nodes are ingredients and amount to 381, out of which
 55 are carnic, 33 have animal origin and 293 are vegan.
 
-<img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredients_3cat.png" width="600px">
+<img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_all.png" width="600px">
 Hiveplot constructed from the omnivorous network
 
 ## Axes
@@ -52,11 +52,41 @@ Colors of edges across different categories:
 <td>Vegetarian</td>
 <td>Vegan</td>
 </tr>
+
+<tr>
+<td>Worldwide</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_all.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_all.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_all.png" width="150px"</td>
+</tr>
+
+
 <tr>
 <td>African</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_African.png" width="150px"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_African.png" width="150px"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_African.png" width="150px"</td>
+</tr>
+
+<tr>
+<td>Middle Eastern</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_MiddleEastern.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_MiddleEastern.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_MiddleEastern.png" width="150px"</td>
+</tr>
+
+<tr>
+<td>South Asian</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthAsian.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthAsian.png  " width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthAsian.png" width="150px"</td>
+</tr>
+
+<tr>
+<td>Southeast Asian</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SoutheastAsian.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SoutheastAsian.png  " width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SoutheastAsian.png" width="150px"</td>
 </tr>
 
 <tr>
@@ -74,25 +104,20 @@ Colors of edges across different categories:
 </tr>
 
 <tr>
+<td>North American</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthAmerican.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthAmerican.png" width="150px"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthAmerican.png" width="150px"</td>
+</tr>
+
+<tr>
 <td>Latin American</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_LatinAmerican.png" width="150px"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_LatinAmerican.png" width="150px"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_LatinAmerican.png" width="150px"</td>
 </tr>
 
-<tr>
-<td>Middle Eastern</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_MiddleEastern.png" width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_MiddleEastern.png" width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_MiddleEastern.png" width="150px"</td>
-</tr>
 
-<tr>
-<td>North American</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthAmerican.png" width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthAmerican.png" width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthAmerican.png" width="150px"</td>
-</tr>
 
 <tr>
 <td>Northern European</td>
@@ -101,19 +126,6 @@ Colors of edges across different categories:
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthernEuropean.png" width="150px"</td>
 </tr>
 
-<tr>
-<td>South Asian</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthAsian.png" width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthAsian.png  " width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthAsian.png" width="150px"</td>
-</tr>
-
-<tr>
-<td>Southeast Asian</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SoutheastAsian.png" width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SoutheastAsian.png  " width="150px"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SoutheastAsian.png" width="150px"</td>
-</tr>
 
 <tr>
 <td>Southern European</td>
