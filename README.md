@@ -45,3 +45,81 @@ Colors of edges across different categories:
    ingredients.
  - Yellow lines connect vegan to carnic ingredients.
 
+<table>
+	<tr>
+	<td>African</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_African.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_African.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_African.png" with="100px"</td>
+	</tr>
+	
+	<tr>
+	<td>East Asian</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_EastAsian.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_EastAsian.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_EastAsian.png" with="100px"</td>
+	</tr>
+	
+	<tr>
+	<td>Eastern European</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_EasternEuropean.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_EasternEuropean.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_EasternEuropean.png" with="100px"</td>
+	</tr>
+
+	<tr>
+	<td>Latin American</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_LatinAmerican.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_LatinAmerican.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_LatinAmerican.png" with="100px"</td>
+	</tr>
+
+	<tr>
+	<td>Middle Eastern</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_MiddleEastern.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_MiddleEastern.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_MiddleEastern.png" with="100px"</td>
+	</tr>
+
+	<tr>
+	<td>North American</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthAmerican.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthAmerican.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthAmerican.png" with="100px"</td>
+	</tr>
+
+	<tr>
+	<td>Northern European</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthernEuropean.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthernEuropean.png  " with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthernEuropean.png" with="100px"</td>
+	</tr>
+
+	<tr>
+	<td>South Asian</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthAsian.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthAsian.png  " with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthAsian.png" with="100px"</td>
+	</tr>
+	
+	<tr>
+	<td>Southeast Asian</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SoutheastAsian.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SoutheastAsian.png  " with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SoutheastAsian.png" with="100px"</td>
+	</tr>
+
+	<tr>
+	<td>Southern European</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthernEuropean.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthernEuropean.png  " with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthernEuropean.png" with="100px"</td>
+	</tr>
+
+	<tr>
+	<td>Western European</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_WesternEuropean.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_WesternEuropean.png" with="100px"</td>
+	<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_WesternEuropean.png" with="100px"</td>
+	</tr>
+</table>
