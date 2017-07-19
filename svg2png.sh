@@ -6,4 +6,4 @@ PREFIX=`basename $SVG .svg`
 
 PNG=${PREFIX}.png
 
-convert $SVG $PNG
+convert $SVG -background '#fff' -flatten $PNG
