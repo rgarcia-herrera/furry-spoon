@@ -8,37 +8,37 @@
 
 <tr>
 <td>Worldwide</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_all.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_all.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_all.png" width="25%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_all.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_all.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_all.png" width="100%"</td>
 </tr>
 
 <tr>
 <td>North American: 41,524 recipes</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthAmerican.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthAmerican.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthAmerican.png" width="25%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthAmerican.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthAmerican.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthAmerican.png" width="100%"</td>
 </tr>
 
 <tr>
 <td>Southern European: 4,180 recipes</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthernEuropean.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthernEuropean.png  " width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthernEuropean.png" width="25%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthernEuropean.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthernEuropean.png  " width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthernEuropean.png" width="100%"</td>
 </tr>
 
 <tr>
 <td>Latin American: 2,917 recipes</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_LatinAmerican.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_LatinAmerican.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_LatinAmerican.png" width="25%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_LatinAmerican.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_LatinAmerican.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_LatinAmerican.png" width="100%"</td>
 </tr>
 
 <tr>
 <td>Western European: 2,659 recipes</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_WesternEuropean.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_WesternEuropean.png" width="25%"</td>
-<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_WesternEuropean.png" width="25%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_WesternEuropean.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_WesternEuropean.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_WesternEuropean.png" width="100%"</td>
 </tr>
 
 <tr>
