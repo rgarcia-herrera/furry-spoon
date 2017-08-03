@@ -1,35 +1,10 @@
 import csv
-from pony.orm import *
 import pickle
+import model
 
-db = Database()
-
-
-class Ingredient(db.Entity):
-    name = Required(str)
-    tags = Required(Json)
-
-
-db.bind('sqlite', 'data/ingredients.sqlite', create_db=False)
-db.generate_mapping(create_tables=False)
-
-
-with db_session:
-    carnic = sorted([i.name
-                     for i in Ingredient.select(lambda i:
-                                                'carnic' in i.tags)],
-                    reverse=True)
-    vegan = sorted([i.name
-                    for i in Ingredient.select(lambda i:
-                                               'vegan' in i.tags)],
-                   reverse=True)
-    animal = sorted([i.name
-                     for i in Ingredient.select(lambda i:
-                                                'animal origin' in i.tags)],
-                    reverse=True)
-
-
-ings = {}
+ings = {'WorldWide': {'omni': [],
+               'veggie': [],
+               'vegan': []}}
 
 with open('data/srep00196-s3.csv') as f:
     reader = csv.reader(f)
@@ -38,7 +13,7 @@ with open('data/srep00196-s3.csv') as f:
         # discard comments
         if r[0].startswith('#'):
             continue
-        
+
         cuisine = r[0]
 
         if cuisine not in ings:
@@ -47,20 +22,24 @@ with open('data/srep00196-s3.csv') as f:
                              'vegan': []}
 
         ings[cuisine]['omni'].append(r[1:])
+        ings['WorldWide']['omni'].append(r[1:])
 
         veggie_r = []
         for ingredient in r[1:]:
-            if ingredient not in carnic:
+            if ingredient not in model.carnic:
                 veggie_r.append(ingredient)
         ings[cuisine]['veggie'].append(veggie_r)
+        ings['WorldWide']['veggie'].append(veggie_r)
 
         vegan_r = []
         for ingredient in r[1:]:
-            if ingredient not in carnic and ingredient not in animal:
+            if ingredient not in model.carnic and ingredient not in model.animal:
                 vegan_r.append(ingredient)
         ings[cuisine]['vegan'].append(vegan_r)
+        ings['WorldWide']['vegan'].append(vegan_r)
 
 
+#count
 c = {cuisine: {'omni': {},
                'veggie': {},
                'vegan': {}} for cuisine in ings.keys()}
@@ -73,6 +52,7 @@ for cuisine in ings:
                 c[cuisine][tag][size] += 1
             else:
                 c[cuisine][tag][size] = 1
+
 
 with open('data/ingredient_count_dist.pickle', 'w') as f:
     pickle.dump(c, f)
