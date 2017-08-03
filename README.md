@@ -51,8 +51,14 @@ differences in recipe count per cuisine. Consider the same table but
 [ordered by recipe count](recipe_count_table.md).
 
 
-<table> <tr> <td>&nbsp;</td>
-<td>Omnivorous</td> <td>Vegetarian</td> <td>Vegan</td> <td>Ingredient count distribution</td></tr>
+<table>
+<tr><td>&nbsp;</td>
+	<td>Omnivorous</td>
+	<td>Vegetarian</td>
+	<td>Vegan</td>
+	<td>Ingredient Count Distribution</td>
+	<td>Normalized Ingredient Count Distribution</td>
+</tr>
 
 <tr>
 <td>Worldwide</td>
