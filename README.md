@@ -67,6 +67,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_African.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_African.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_African.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_African.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -74,6 +75,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_MiddleEastern.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_MiddleEastern.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_MiddleEastern.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_MiddleEastern.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -81,6 +83,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthAsian.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthAsian.png  " width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthAsian.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_SouthAsian.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -88,6 +91,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SoutheastAsian.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SoutheastAsian.png  " width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SoutheastAsian.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_SoutheastAsian.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -95,6 +99,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_EastAsian.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_EastAsian.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_EastAsian.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_EastAsian.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -102,6 +107,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_EasternEuropean.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_EasternEuropean.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_EasternEuropean.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_EasternEuropean.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -109,6 +115,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthAmerican.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthAmerican.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthAmerican.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_NorthAmerican.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -116,6 +123,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_LatinAmerican.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_LatinAmerican.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_LatinAmerican.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_LatinAmerican.png" width="100%"</td>
 </tr>
 
 
@@ -125,6 +133,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_NorthernEuropean.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_NorthernEuropean.png  " width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_NorthernEuropean.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_NorthernEuropean.png" width="100%"</td>
 </tr>
 
 
@@ -133,6 +142,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_SouthernEuropean.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_SouthernEuropean.png  " width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_SouthernEuropean.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_SouthernEuropean.png" width="100%"</td>
 </tr>
 
 <tr>
@@ -140,6 +150,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_WesternEuropean.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_WesternEuropean.png" width="100%"</td>
 <td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_WesternEuropean.png" width="100%"</td>
+<td bgcolor="white"><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_WesternEuropean.png" width="100%"</td>
 </tr>
 </table>
 
