@@ -169,6 +169,7 @@ differences in recipe count per cuisine. Consider the same table but
 <td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_WesternEuropean.png" width="100%"</td>
 <td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_WesternEuropean.png" width="100%"</td>
 <td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_WesternEuropean.png" width="100%"</td>
+<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_norm_WesternEuropean.png" width="100%"</td>
 </tr>
 </table>
 
