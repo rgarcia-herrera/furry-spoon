@@ -52,14 +52,14 @@ differences in recipe count per cuisine. Consider the same table but
 
 
 <table> <tr> <td>&nbsp;</td>
-<td>Omnivorous</td> <td>Vegetarian</td> <td>Vegan</td> <td>Ingredient count dist</td></tr>
+<td>Omnivorous</td> <td>Vegetarian</td> <td>Vegan</td> <td>Ingredient count distribution</td></tr>
 
 <tr>
 <td>Worldwide</td>
 <td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/omni_all.png" width="100%"</td>
 <td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegetarian_all.png" width="100%"</td>
 <td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/vegan_all.png" width="100%"</td>
-<td>&nbsp;</td>
+<td><img src="https://raw.githubusercontent.com/rgarcia-herrera/furry-spoon/master/plots/ingredient_count_dist_WorldWide.png" width="100%"</td>
 </tr>
 
 
