@@ -18,4 +18,4 @@ for cuisine in c:
     )
     plt.title(cuisine)
     plt.savefig("plots/ingredient_count_dist_%s.png" % cuisine)
-    plt.cla()
+    plt.clf()
