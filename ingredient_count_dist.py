@@ -1,5 +1,6 @@
 import csv
 from pony.orm import *
+import pickle
 
 db = Database()
 
@@ -73,14 +74,5 @@ for cuisine in ings:
             else:
                 c[cuisine][tag][size] = 1
 
-
-from pprint import pprint                
-pprint(c)
-
-import matplotlib.pyplot as plt
-
-for cuisine in c:
-    for tag in ('omni', 'veggie', 'vegan'):
-        plt.plot(c[cuisine][tag].keys(), c[cuisine][tag].values())
-        plt.ylabel('%s %s' % (cuisine, tag))
-        plt.show()
+with open('data/ingredient_count_dist.pickle', 'w') as f:
+    pickle.dump(c, f)
