@@ -1,3 +1,7 @@
+Moved here:
+
+<https://codeberg.org/rgarcia-herrera/furry-spoon>
+
 # Veggie network
 
 
